@@ -53,7 +53,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let user = post["author"] as! PFUser
         cell.usernameLabel.text = user.username
         
-        cell.captionLabel.text = post["caption"] as! String
+        cell.captionLabel.text = (post["caption"] as! String)
         
         let imageFile = post["image"] as! PFFileObject
         let urlString = imageFile.url!
@@ -73,4 +73,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     */
 
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()
+        
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+        
+        let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
+        
+        delegate.window?.rootViewController = loginViewController
+    }
 }
