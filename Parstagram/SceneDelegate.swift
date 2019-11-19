@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftUI
+import Parse
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -29,8 +30,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             // self.window = window
             // window.makeKeyAndVisible()
         // }
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+            
+            window?.rootViewController = feedNavigationController
+        }
         
-        guard let _ = (scene as? UIWindowScene) else { return }
+        // guard let _ = (scene as? UIWindowScene) else { return }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
