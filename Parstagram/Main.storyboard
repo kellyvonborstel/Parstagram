@@ -150,7 +150,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="This is a comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkr-dT-lRt">
-                                                    <rect key="frame" x="63" y="19" width="139.5" height="20.5"/>
+                                                    <rect key="frame" x="54" y="19" width="139.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -161,9 +161,9 @@
                                                 <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Og5-sG-aD0" secondAttribute="bottom" constant="8" id="L63-0h-RfQ"/>
                                                 <constraint firstItem="Og5-sG-aD0" firstAttribute="top" secondItem="6Ly-PF-OEv" secondAttribute="topMargin" constant="8" id="fgQ-kM-bK5"/>
                                                 <constraint firstItem="qkr-dT-lRt" firstAttribute="top" secondItem="6Ly-PF-OEv" secondAttribute="top" constant="19" id="lkV-tA-FiT"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qkr-dT-lRt" secondAttribute="trailing" constant="15" id="r6u-BW-NqW"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qkr-dT-lRt" secondAttribute="trailing" constant="8" id="r6u-BW-NqW"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qkr-dT-lRt" secondAttribute="bottom" constant="8" id="tJh-dU-Dyq"/>
-                                                <constraint firstItem="qkr-dT-lRt" firstAttribute="leading" secondItem="Og5-sG-aD0" secondAttribute="trailing" constant="17" id="zIx-2A-l7N"/>
+                                                <constraint firstItem="qkr-dT-lRt" firstAttribute="leading" secondItem="Og5-sG-aD0" secondAttribute="trailing" constant="8" id="zIx-2A-l7N"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -172,16 +172,16 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="Ele-5N-SUo">
-                                        <rect key="frame" x="0.0" y="498" width="375" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="498" width="375" height="37"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ele-5N-SUo" id="fFR-W0-eHf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="37.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26s-vu-fhH">
-                                                    <rect key="frame" x="16" y="8" width="351" height="21.5"/>
+                                                    <rect key="frame" x="16" y="8" width="351" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
